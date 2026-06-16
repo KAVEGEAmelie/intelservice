@@ -70,7 +70,7 @@ Le site sera disponible sur `http://localhost:3000`.
 1. Créez un compte gratuit sur [resend.com](https://resend.com/).
 2. Ouvrez **API Keys** puis créez une clé nommée `intel-services-production`.
 3. Copiez la clé dans `RESEND_API_KEY`.
-4. Facultatif : vérifiez votre domaine pour envoyer depuis `contact@intel-services.tg`.
+4. Les emails partiront depuis `onboarding@resend.dev` (largement suffisant en gratuit, max 100 emails/jour).
 
 ## Structure du projet
 
@@ -130,7 +130,7 @@ Consultez le guide complet : [DEPLOYMENT.md](./DEPLOYMENT.md)
 - **Téléphones** : (+228) 22 22 14 54, 90 11 66 86, 99 32 98 98
 - **WhatsApp** : [22890116686](https://wa.me/22890116686)
 - **Email** : [infos_its@yahoo.fr](mailto:infos_its@yahoo.fr)
-- **Production** : [https://intel-services.tg](https://intel-services.tg)
+- **Production** : [https://intelservice.vercel.app](https://intelservice.vercel.app)
 
 ---
 
