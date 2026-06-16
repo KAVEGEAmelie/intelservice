@@ -1,0 +1,21 @@
+{
+  "name": "In-Tel Services",
+  "short_name": "In-Tel Services",
+  "description": "Site vitrine officiel de In-Tel Services à Lomé.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A2540",
+  "theme_color": "#0A2540",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
