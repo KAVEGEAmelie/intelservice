@@ -19,7 +19,7 @@ export const site = {
   baseline: "Votre partenaire technologique au cœur de Lomé",
   description:
     "In-Tel Services — informatique, réseaux et sécurité électronique à Lomé (Togo). Vente de matériel, vidéosurveillance, WiFi, maintenance et développement web.",
-  url: "https://intel-services.tg",
+  url: "https://intelservice.vercel.app",
   address: "20 Av. du RPT, Face le Grand Collège du Plateau, 04BP452 Lomé-TOGO",
   city: "Lomé",
   country: "Togo",

@@ -1,6 +1,6 @@
 # Déploiement de In-Tel Services sur Vercel
 
-Ce guide explique comment mettre en ligne le site **In-Tel Services** sur **Vercel** avec le domaine `intel-services.tg`.
+Ce guide explique comment mettre en ligne le site **In-Tel Services** sur **Vercel** gratuitement avec une URL `*.vercel.app`.
 
 ## 1. Préparer le projet en local
 
@@ -21,7 +21,7 @@ Avant le déploiement, vérifiez que le projet compile correctement sur votre ma
 2. Dans **API Keys**, créez une clé nommée `intel-services-production`.
 3. Copiez la clé et conservez-la pour Vercel dans `RESEND_API_KEY`.
 4. Définissez `CONTACT_TO_EMAIL` avec l'adresse de réception souhaitée.
-5. Optionnel : vérifiez le domaine d'envoi pour utiliser `contact@intel-services.tg` comme expéditeur.
+5. Les emails partiront depuis `onboarding@resend.dev` (largement suffisant en gratuit, max 100 emails/jour vers votre propre email).
 
 ## 3. Déployer sur Vercel
 
@@ -33,28 +33,21 @@ Avant le déploiement, vérifiez que le projet compile correctement sur votre ma
    - `CONTACT_TO_EMAIL`
 5. Lancez le premier déploiement avec **Deploy**.
 
-## 4. Connecter le domaine `intel-services.tg`
+## 4. Personnaliser ton URL Vercel
 
-Dans le tableau de bord Vercel, ouvrez **Settings > Domains** puis ajoutez :
+Par défaut, Vercel génère une URL du type `intelservice-abc123.vercel.app`. Vous pouvez obtenir une URL plus jolie et mémorisable **gratuitement** :
 
-- Domaine racine : `intel-services.tg`
-- Sous-domaine : `www.intel-services.tg`
+1. Dans le tableau de bord Vercel, ouvrez **Settings > General**.
+2. Dans la section **Project Name**, changez le nom du projet (ex : `in-tel-services`).
+3. Votre site sera alors accessible via `https://in-tel-services.vercel.app`.
 
-Configurez ensuite le DNS chez votre registrar :
-
-| Type | Nom | Valeur |
-| --- | --- | --- |
-| `A` | `@` | `76.76.21.21` |
-| `CNAME` | `www` | `cname.vercel-dns.com` |
-
-Attendez la propagation DNS puis confirmez le domaine dans Vercel.
+> 💡 Vercel propose des sous-domaines `*.vercel.app` gratuits illimités. Vous pouvez aussi ajouter un vrai domaine personnalisé plus tard dans **Settings > Domains** sans rien reconfigurer.
 
 ## 5. Checklist post-déploiement
 
-- Vérifier l'ouverture du site sur `https://intel-services.tg`
-- Vérifier la version `www`
-- Contrôler `https://intel-services.tg/sitemap.xml`
-- Contrôler `https://intel-services.tg/robots.txt`
+- Vérifier l'ouverture du site sur `https://intelservice.vercel.app`
+- Contrôler `https://intelservice.vercel.app/sitemap.xml`
+- Contrôler `https://intelservice.vercel.app/robots.txt`
 - Tester le formulaire de contact
 - Vérifier la réception email
 - Tester le bouton WhatsApp
@@ -77,9 +70,9 @@ Workflow recommandé :
 
 Après mise en ligne :
 
-1. Ajoutez le site à **Google Search Console**
-2. Soumettez le sitemap
-3. Créez ou mettez à jour la fiche **Google Business Profile**
+1. Ajoutez le site à **Google Search Console** avec l'URL `https://intelservice.vercel.app`
+2. Soumettez le sitemap `https://intelservice.vercel.app/sitemap.xml`
+3. Créez ou mettez à jour la fiche **Google Business Profile** (toujours pertinent pour une entreprise locale à Lomé)
 4. Vérifiez les informations NAP (Name, Address, Phone) partout de façon cohérente
 
 ## Dépannage
@@ -111,7 +104,7 @@ Après mise en ligne :
 | --- | --- |
 | Vercel Hobby | Gratuit |
 | Resend | Gratuit pour démarrer |
-| Domaine `.tg` | Environ 30 €/an |
+| **Total** | **0 € (100% gratuit)** 🎉 |
 
 ## Pour aller plus loin
 
